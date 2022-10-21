@@ -1,14 +1,3 @@
-https://www.alchemy.com/blog/how-to-polyfill-node-core-modules-in-webpack-5
-
-### Fixing the Polyfill error
-npm install --save-dev react-app-rewired
-
-npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
-
-
-
-config-overrides.js
-
 const webpack = require('webpack'); 
 module.exports = function override(config) { 
 		const fallback = config.resolve.fallback || {}; 
@@ -29,10 +18,3 @@ module.exports = function override(config) {
     }) 
    ]) 
    return config; }
-
-
-==============
-replace react-scripts
-
-react-app-rewired
-
